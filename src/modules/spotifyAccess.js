@@ -4,7 +4,7 @@ async function accessSpotify() {
          response_type: 'code',
          client_id: '18292b93831e49c6a52ad6b5291159c7',
          scope: 'user-read-private user-read-email',
-         redirect_uri: 'http://127.0.0.1:8888/callback'
+         redirect_uri: 'https://lyster.netlify.app/callback'
     }));
     if (response.ok) {
       const jsonResponse = await response.json();
