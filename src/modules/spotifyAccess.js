@@ -21,7 +21,7 @@ function accessSpotify() {
       response_type: 'code',
       client_id: '18292b93831e49c6a52ad6b5291159c7',
       scope: 'user-read-private user-read-email',
-      redirect_uri: 'https://lyster.netlify.app/callback'
+      redirect_uri: 'https://lyster.netlify.app'
    });
 
    window.location.href = `https://accounts.spotify.com/authorize?${params.toString()}`;
