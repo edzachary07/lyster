@@ -41,4 +41,4 @@ async function fetchAccessToken() {
    }
 }
 
-export default {accessSpotify, fetchAccessToken};
+export {accessSpotify, fetchAccessToken};
