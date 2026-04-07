@@ -25,6 +25,7 @@ function accessSpotify() {
    });
 
    window.location.href = `https://accounts.spotify.com/authorize?${params.toString()}`;
+   console.log(window.location.href);
 }
 
 export default accessSpotify;
