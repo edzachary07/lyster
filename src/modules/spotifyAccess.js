@@ -28,6 +28,10 @@ async function fetchAccessToken() {
    try {
       const response = await fetch('https://accounts.spotify.com/api/token', {
          method: 'POST',
+         headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Authorization': `Basic ${btoa(`${clientId}:${clientSecret}`)}`
+         },
          body: body
       });
       if (response.ok) {
@@ -35,7 +39,6 @@ async function fetchAccessToken() {
          console.log(jsonResponse);
          return jsonResponse;
       }
-      throw new Error('Request failed');
    } catch (error) {
       console.log(error);
    }
