@@ -9,7 +9,7 @@ const songData = [
     songName: 'testSongName1',
     artist: 'testArtist1',
     album: 'testAlbum1',
-    albumImgSrc: '../public/testAlbumImg1.jpg',
+    albumImgSrc: 'dist/testAlbumImg1.jpg',
     uri: 'uri1'
   },
   {
