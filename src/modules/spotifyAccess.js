@@ -24,7 +24,7 @@ function accessSpotify() {
   }
 
 async function fetchAccessToken() {
-   let body = `grant_type=autorization_code&code=${getCode()}&redirect_uri=${redirectUri}&client_id=${clientId}&client_secret=${clientSecret}`;
+   let body = `grant_type=authorization_code&code=${getCode()}&redirect_uri=${redirectUri}&client_id=${clientId}&client_secret=${clientSecret}`;
    try {
       const response = await fetch('https://accounts.spotify.com/api/token', {
          method: 'POST',
