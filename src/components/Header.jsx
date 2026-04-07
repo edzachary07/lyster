@@ -1,6 +1,6 @@
 import SearchBar from './SearchBar.jsx';
 import styles from '../styles/Header.module.css';
-import accessSpotify from '../modules/spotifyAccess.js';
+import {accessSpotify, fetchAccessToken} from '../modules/spotifyAccess.js';
 
 function Header() {
    return (
@@ -9,6 +9,7 @@ function Header() {
          <p>Simplified Spotify playlist creation</p>
          <SearchBar className={styles.searchBar} />
          <button onClick={accessSpotify} >Login</button>
+         <button onClick={fetchAccessToken}>Access Token</button>
       </div>
    )
 }
